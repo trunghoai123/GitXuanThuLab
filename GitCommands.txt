@@ -1,0 +1,20 @@
+git commit
+ - commit <--ammend> -m "new comments": cập nhật những thay đổi vào commit cuối mà k thêm commit nào
+git restore <file_name>: khôi phục files đã xóa, hoặc hủy sửa đổi các file đã sửa về trạng thái ở commit cuối 
+  (các file phải ở trạng thái unstaged)
+  - restore --staged <file_name>: chuyển staged files -> unstaged files
+git log: hiển thị thông tin các commit
+ - tham số "--oneline": hiển thị thông tin rút gọn
+git diff: so sanh sự khác nhau của các  file
+ - nếu chưa đưa các file sửa đổi vào vùng staged thì sẽ
+  + so sánh thư mục làm việc và commit cuối
+ - nếu đã đưa file vào vùng staged thì sẽ
+  + so sanh vùng staged và thư mục làm việc
+- tham số "staged"
+  + so sánh staged files với the last commit
+- git diff <commmit_id1> <commit_id2>: so sánh sự khác nhau giữa 2 commit
+   + tham số "stat": so sánh gọn hơn, vd: about.html | 2+-(file about có thêm và có xóa), tương tự vs các file khác
+git checkout <commit_ id> < -- file_name>: phục hồi file_name trở về trạng thái ở commit đã chọn (id commit rút gọn)
+  - sau khi checkout về commit mong muốn thì file_name sẽ ở trang thái staged,
+  dùng git restore --staged nếu muốn unstate file_name 
+- không có tham số <commit_id> thì sẽ đưa file_name trở về trạng commit cuối
