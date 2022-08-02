@@ -19,6 +19,7 @@ GIT CHECKOUT <commit_ id> < -- file_name>: phục hồi file_name trở về tr�
   - sau khi checkout về commit mong muốn thì file_name sẽ ở trang thái staged,
   dùng git restore --staged nếu muốn unstate file_name 
 - không có tham số <commit_id> thì sẽ đưa file_name trở về trạng commit cuối
+- <branch_name>: chuyển nhánh
 GIT RESET: hủy những thay đổi cuối cùng (các commit, các thao tác)
 - tham số < --soft> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối vẫn đc lưu vào vùng staged
 - tham số < --hard> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối bị xóa hoàn toàn.
