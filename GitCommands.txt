@@ -27,3 +27,7 @@ GIT RESET: hủy những thay đổi cuối cùng (các commit, các thao tác)
 	vd: git reset -- index.html, từ stated -> unstated
 GIT PUSH
 - tham số < origin branch_name >: cập nhật dữ liệu của nhánh đó lên repo, repo ch có thì tự thêm 
+GIT CLONE: (tự có remote repo khi clone xong)
+- < repo_name>: clone 1 folder giống repo đc chọn
+GIT FETCH: lấy đầy đủ dữ liệu từ remote sau khi vừa clone 
+(chỉ hiện mỗi nhánh master khi kiểm tra bằng git branch, phải checkout qua nhánh khác để hiện nhanh đó)
