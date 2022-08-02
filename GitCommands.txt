@@ -21,7 +21,9 @@ GIT CHECKOUT <commit_ id> < -- file_name>: phục hồi file_name trở về tr�
 - không có tham số <commit_id> thì sẽ đưa file_name trở về trạng commit cuối
 - <branch_name>: chuyển nhánh
 GIT RESET: hủy những thay đổi cuối cùng (các commit, các thao tác)
-- tham số <--soft> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối vẫn đc lưu vào vùng staged
-- tham số <--hard> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối bị xóa hoàn toàn.
-- tham số <-- file_name>: đưa các file ở vùng staging về trạng tháy unstate 
+- tham số < --soft> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối vẫn đc lưu vào vùng staged
+- tham số < --hard> <HEAD~1>: xóa 1 commit cuối, xóa commit cuối, những thay đổi trong commit cuối bị xóa hoàn toàn.
+- tham số < -- file_name>: đưa các file ở vùng staging về trạng tháy unstate 
 	vd: git reset -- index.html, từ stated -> unstated
+GIT PUSH
+- tham số < origin branch_name >: cập nhật dữ liệu của nhánh đó lên repo, repo ch có thì tự thêm 
